@@ -1,0 +1,179 @@
+/* Base styles */
+* {
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+/* Navbar */
+.navbar {
+    height: 60px;
+    background-color: #0F1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo {
+    height: 50px;
+    width: 113px;
+    transition: background 0.5s, transform 0.5s;
+}
+.nav-logo:hover {
+    transform: translateY(-1px);
+}
+.logo {
+    background-image: url("amazon_logo.png");
+    height: 50px;
+    width: 100%;
+    background-size: cover;
+}
+
+/* Address and Search */
+.navaddress {
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    font-size: 0.7rem;
+}
+.address-deliver {
+    color: #cccccc;
+    margin-left: 10px;
+}
+.address-india {
+    font-size: 0.9rem;
+    margin-left: 3px;
+}
+.nav-search {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.nav-select,
+.nav-input,
+.search-icon {
+    font-size: 0.9rem;
+}
+.search-icon {
+    width: 40px;
+    font-size: 1rem;
+    background-color: #febd68;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: #0F1111;
+}
+.search-icon:hover {
+    background-color: rgb(249, 181, 21);
+}
+
+/* Panel */
+.panel {
+    display: flex;
+    align-items: center;
+    background-color: #222f3d;
+    color: white;
+    height: 40px;
+}
+.panel-option p {
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+.panel-shop {
+    padding-left: 5%;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.panel-shop2 {
+    padding: 4px;
+}
+
+/* Hero section */
+.hero-section {
+    background-image: url("hero_img.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.hero-msg {
+    background-color: white;
+    color: black;
+    height: 30px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    margin-top: 150px;
+    margin-bottom: 10px;
+}
+.hero-msg2 {
+    color: #007185;
+}
+
+/* All cards */
+.main-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f5d2;
+}
+.box {
+    width: 90%;
+    background: white;
+    margin: 10px auto;
+}
+
+/* Media Queries for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        height: auto;
+        flex-direction: column;
+    }
+    .nav-logo {
+        margin-top: 10px;
+    }
+    .navaddress {
+        padding: 5px;
+        font-size: 0.6rem;
+    }
+    .address-india {
+        font-size: 0.8rem;
+    }
+    .nav-search {
+        flex-direction: column;
+    }
+    .nav-select,
+    .nav-input,
+    .search-icon {
+        font-size: 0.8rem;
+    }
+    .search-icon {
+        width: 35px;
+        font-size: 0.9rem;
+    }
+    .panel-shop {
+        padding-left: 10%;
+        font-size: 0.7rem;
+    }
+    .hero-msg {
+        font-size: 0.6rem;
+        margin-top: 100px;
+        margin-bottom: 5px;
+    }
+    .panel-option p {
+        font-size: 0.7rem;
+    }
+    .box {
+        width: 95%;
+        margin: 5px auto;
+    }
+}
